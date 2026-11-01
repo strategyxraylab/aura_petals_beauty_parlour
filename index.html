@@ -1,0 +1,258 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AURA PETALS BEAUTY PARLOR | Where Beauty Blooms</title>
+<meta name="description" content="Welcome to Aura Petals Beauty Parlor. Professional beauty, nail and facial treatments. Book your appointment today.">
+
+<style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #fff8fb;
+  color: #35232e;
+  line-height: 1.6;
+}
+
+header {
+  background: #fff;
+  padding: 18px 7%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  box-shadow: 0 2px 15px #00000010;
+}
+
+.logo {
+  color: #bd5689;
+  font-size: 21px;
+  font-weight: bold;
+}
+
+nav a {
+  text-decoration: none;
+  color: #49313e;
+  margin: 0 8px;
+  font-size: 14px;
+}
+
+.hero {
+  min-height: 75vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 60px 20px;
+  background: linear-gradient(135deg, #f9dce9, #fff1f7);
+}
+
+.hero h1 {
+  font-size: clamp(35px, 7vw, 65px);
+  color: #a83f76;
+  line-height: 1.15;
+}
+
+.hero p {
+  margin: 18px auto;
+  max-width: 550px;
+  font-size: 17px;
+}
+
+.btn {
+  display: inline-block;
+  background: #b94e83;
+  color: white;
+  padding: 13px 25px;
+  border-radius: 30px;
+  text-decoration: none;
+  margin: 8px;
+  font-weight: bold;
+}
+
+.btn:hover {
+  background: #88345e;
+}
+
+section {
+  padding: 65px 7%;
+}
+
+.section-title {
+  text-align: center;
+  color: #a83f76;
+  font-size: 32px;
+  margin-bottom: 30px;
+}
+
+.about {
+  text-align: center;
+  max-width: 750px;
+  margin: auto;
+}
+
+.services {
+  background: #fff;
+}
+
+.service-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+.service-card {
+  background: #fff8fb;
+  padding: 28px 20px;
+  text-align: center;
+  border-radius: 15px;
+  border: 1px solid #f1d5e2;
+}
+
+.service-card h3 {
+  color: #a83f76;
+  margin-bottom: 10px;
+}
+
+.service-card p {
+  font-size: 14px;
+}
+
+.booking {
+  text-align: center;
+  background: #f9e5ef;
+}
+
+.booking p {
+  margin-bottom: 15px;
+}
+
+.contact {
+  text-align: center;
+}
+
+footer {
+  text-align: center;
+  background: #482b3c;
+  color: white;
+  padding: 25px 15px;
+  font-size: 14px;
+}
+
+@media(max-width: 600px) {
+  header {
+    justify-content: center;
+    gap: 12px;
+  }
+
+  nav {
+    text-align: center;
+  }
+
+  nav a {
+    display: inline-block;
+    margin: 5px;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <div class="logo">AURA PETALS</div>
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#services">Services</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<main>
+<section class="hero" id="home">
+  <div>
+    <h1>AURA PETALS<br>BEAUTY PARLOR</h1>
+    <p><em>Where Beauty Blooms</em></p>
+    <p>Discover your beauty, embrace your confidence and enjoy professional beauty treatments in a welcoming space.</p>
+    <a class="btn" href="https://wa.me/254716397341">Book Appointment</a>
+    <a class="btn" href="#services">Explore Services</a>
+  </div>
+</section>
+
+<section id="about">
+  <h2 class="section-title">Welcome to Aura Petals</h2>
+  <div class="about">
+    <p>At Aura Petals Beauty Parlor, we believe every person deserves to feel beautiful and confident. Our goal is to give you a relaxing beauty experience with professional care and attention to detail.</p>
+  </div>
+</section>
+
+<section class="services" id="services">
+  <h2 class="section-title">Our Beauty Services</h2>
+
+  <div class="service-grid">
+
+    <div class="service-card">
+      <h3>Manicure & Pedicure</h3>
+      <p>Beautiful nail care and grooming to keep your hands and feet looking elegant.</p>
+    </div>
+
+    <div class="service-card">
+      <h3>Facial Treatments</h3>
+      <p>Enjoy refreshing facial treatments for a fresh and radiant appearance.</p>
+    </div>
+
+    <div class="service-card">
+      <h3>Wig Installation</h3>
+      <p>Professional wig installation and styling for a beautiful finish.</p>
+    </div>
+
+    <div class="service-card">
+      <h3>Eyebrow Shaping</h3>
+      <p>Beautifully shaped eyebrows to complement your natural features.</p>
+    </div>
+
+    <div class="service-card">
+      <h3>Lashes</h3>
+      <p>Enhance your look with beautiful eyelash services.</p>
+    </div>
+
+    <div class="service-card">
+      <h3>Ear Piercing</h3>
+      <p>Professional ear piercing services in a welcoming environment.</p>
+    </div>
+
+  </div>
+</section>
+
+<section class="booking">
+  <h2 class="section-title">Ready to Bloom?</h2>
+  <p>Book your beauty appointment with us today.</p>
+  <a class="btn" href="https://wa.me/254716397341">Book on WhatsApp</a>
+</section>
+
+<section class="contact" id="contact">
+  <h2 class="section-title">Visit Us</h2>
+  <p><strong>Location:</strong> Ndumbu-ini 87 Road, opposite Elim Apartments, Koppa Uthiru.</p>
+  <p><strong>Phone:</strong> 0716397341</p>
+  <a class="btn" href="tel:+254716397341">Call Us</a>
+  <a class="btn" href="https://wa.me/254716397341">WhatsApp Us</a>
+</section>
+</main>
+
+<footer>
+  <p>AURA PETALS BEAUTY PARLOR</p>
+  <p>Where Beauty Blooms 🌸</p>
+  <p>© 2026 All Rights Reserved</p>
+</footer>
+
+</body>
+</html>
