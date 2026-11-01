@@ -84,11 +84,15 @@ nav a:hover {
   display: inline-block;
   background: var(--pink);
   color: white;
-  padding: 12px 24px;
-  border-radius: 4px;
-  font-size: 13px;
+  padding: 15px 28px;
+  border: 1px solid var(--pink);
+  border-radius: 30px;
+  font-size: 12px;
   font-weight: bold;
-  transition: .3s;
+  letter-spacing: 1px;
+  text-align: center;
+  transition: all .3s ease;
+  box-shadow: 0 8px 20px #b85e8325;
 }
 
 .book-nav:hover, .btn:hover {
@@ -97,13 +101,13 @@ nav a:hover {
 }
 
 .hero {
-  min-height: 620px;
+  min-height: 680px;
   display: flex;
   align-items: center;
-  padding: 90px 9%;
+  padding: 100px 9%;
   background:
-    radial-gradient(ellipse at 80% 30%, #eac3d3 0%, transparent 40%),
-    linear-gradient(120deg, #f8e9ed, #fff8f2);
+    radial-gradient(ellipse at 85% 25%, #e8bfd0 0%, transparent 42%),
+    linear-gradient(120deg, #f9e9ef 0%, #fffaf6 55%, #f5e1e9 100%);
   position: relative;
   overflow: hidden;
 }
@@ -134,10 +138,12 @@ nav a:hover {
 
 .hero h1 {
   font-family: Georgia, serif;
-  font-size: clamp(43px, 7vw, 76px);
-  line-height: 1.08;
-  margin: 22px 0;
+  font-size: clamp(42px, 7vw, 78px);
+  line-height: 1.12;
+  letter-spacing: -1.5px;
+  margin: 24px 0;
   font-weight: normal;
+  color: #492c3c;
 }
 
 .hero h1 span {
@@ -427,13 +433,48 @@ footer p {
 }
 
 @media(max-width: 480px) {
+  .hero {
+    min-height: 560px;
+    padding: 75px 7%;
+  }
+
+  .hero-content {
+    width: 100%;
+  }
+
+  .hero .btn {
+    display: block;
+    width: 100%;
+    max-width: 310px;
+    margin: 12px 0;
+    box-sizing: border-box;
+  }
+
   .brand {
     font-size: 19px;
   }
 
   nav {
     width: 100%;
-    justify-content: center;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    gap: 20px;
+    overflow-x: auto;
+    overflow-y: hidden;
+    white-space: nowrap;
+    padding: 8px 2px 12px;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+  }
+
+  nav::-webkit-scrollbar {
+    display: none;
+  }
+
+  nav a {
+    flex: 0 0 auto;
+    font-size: 12px;
   }
 
   .service-grid {
@@ -523,6 +564,8 @@ footer p {
     <a href="#home">Home</a>
     <a href="#about">About</a>
     <a href="#services">Services</a>
+    <a href="#gallery">Gallery</a>
+    <a href="#salon-interior">Our Salon</a>
     <a href="#booking">Booking</a>
     <a href="#contact">Contact</a>
   </nav>
