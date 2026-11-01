@@ -448,6 +448,44 @@ footer p {
     padding: 22px;
   }
 }
+
+/* AURA PETALS PHOTO GALLERY */
+.gallery {
+  padding: 75px 6%;
+  background: #fff7f9;
+}
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 16px;
+  margin-top: 30px;
+}
+.gallery-grid img {
+  width: 100%;
+  height: 230px;
+  object-fit: cover;
+  border-radius: 16px;
+  display: block;
+  transition: transform .3s ease;
+}
+.gallery-grid img:hover {
+  transform: scale(1.03);
+}
+@media (max-width: 700px) {
+  .gallery-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 12px;
+  }
+  .gallery-grid img {
+    height: 180px;
+  }
+}
+@media (max-width: 380px) {
+  .gallery-grid img {
+    height: 145px;
+  }
+}
+
 </style>
 </head>
 
@@ -569,6 +607,26 @@ footer p {
       <a href="#booking">BOOK THIS SERVICE →</a>
     </div>
 
+  </div>
+</section>
+
+
+<section class="gallery" id="gallery">
+  <div class="section-heading">
+    <div class="eyebrow">A TOUCH OF BEAUTY</div>
+    <h2>Our Beauty Gallery</h2>
+    <p>Explore a glimpse of beauty, creativity and elegance at Aura Petals.</p>
+  </div>
+
+  <div class="gallery-grid">
+    <img src="images/597f9ee7-18e7-4702-808a-7e76fe4c56a1.jpeg" alt="Beauty gallery photo 1" loading="lazy">
+    <img src="images/90b2391b6d97f653b94fcc72361eb8f6.jpg" alt="Beauty gallery photo 2" loading="lazy">
+    <img src="images/IMG_20260911_134731.jpg" alt="Beauty gallery photo 3" loading="lazy">
+    <img src="images/These%20earing%20%F0%9F%92%96%F0%9F%92%97.jpeg" alt="Beauty gallery photo 4" loading="lazy">
+    <img src="images/a619c163f6c14d80a70524e81a66c33c.jpg" alt="Beauty gallery photo 5" loading="lazy">
+    <img src="images/b85c7455-88a5-477b-b768-c3364c32d098.jpeg" alt="Beauty gallery photo 6" loading="lazy">
+    <img src="images/file_000000003c1c81f4b1640e8e97a359b4.png" alt="Beauty gallery photo 7" loading="lazy">
+    <img src="images/file_00000000ef9471f5868946871c7f4daa.png" alt="Beauty gallery photo 8" loading="lazy">
   </div>
 </section>
 
