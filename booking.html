@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Book Appointment | Aura Petals Beauty Parlor</title>
+<link rel="stylesheet" href="pages.css">
+</head>
+<body>
+<header>
+<a class="brand" href="index.html">AURA PETALS<small>BEAUTY PARLOR</small></a>
+<nav>
+<a href="index.html">Home</a><a href="about.html">About</a><a href="services.html">Services</a><a href="gallery.html">Gallery</a><a href="booking.html">Booking</a><a href="reviews.html">Reviews</a><a href="offers.html">Offers</a><a href="team.html">Team</a><a href="contact.html">Contact</a>
+</nav>
+</header>
+<section class="page-hero"><div class="eyebrow">LET'S GET YOU BOOKED</div><h1>Book Your Appointment</h1><p>We look forward to welcoming you</p></section>
+<main>
+<div class="intro"><h2>Appointment request</h2><p>Complete the form below. Your booking request will open in WhatsApp so you can send it to our team.</p></div>
+<form id="bookingForm">
+<label for="name">Your Full Name *</label>
+<input id="name" type="text" placeholder="Enter your name" required>
+<label for="phone">Your Phone Number *</label>
+<input id="phone" type="tel" placeholder="Enter your phone number" required>
+<label for="service">Choose a Service *</label>
+<select id="service" required>
+<option value="">Select a service</option>
+<option>Manicure &amp; Pedicure</option>
+<option>Facial Treatments</option>
+<option>Wig Installation</option>
+<option>Eyebrow Shaping</option>
+<option>Lashes</option>
+<option>Ear Piercing</option>
+</select>
+<label for="date">Preferred Appointment Date *</label>
+<input id="date" type="date" required>
+<label for="message">Additional Details</label>
+<textarea id="message" rows="4" placeholder="Any special requests?"></textarea>
+<button type="submit">SEND BOOKING REQUEST ON WHATSAPP</button>
+</form>
+</main>
+<footer><strong>AURA PETALS BEAUTY PARLOR</strong><p>Where Beauty Blooms</p><div class="footer-links"><a href="index.html">Home</a><a href="services.html">Services</a><a href="contact.html">Contact</a><a href="https://www.facebook.com/profile.php?id=61581383393894">Facebook</a></div><p>WhatsApp: 0143962045</p></footer>
+<script>
+const dateInput = document.getElementById("date");
+const now = new Date();
+dateInput.min = new Date(now.getTime() - now.getTimezoneOffset() * 60000).toISOString().split("T")[0];
+
+document.getElementById("bookingForm").addEventListener("submit", function(e) {
+  e.preventDefault();
+  const name = document.getElementById("name").value.trim();
+  const phone = document.getElementById("phone").value.trim();
+  const service = document.getElementById("service").value;
+  const date = document.getElementById("date").value;
+  const details = document.getElementById("message").value.trim();
+
+  if (!name || !phone || !service || !date) {
+    alert("Please complete all required fields.");
+    return;
+  }
+
+  const message = "Hello Aura Petals Beauty Parlor! I would like to request an appointment.\n\n" +
+    "Name: " + name + "\nPhone: " + phone + "\nService: " + service +
+    "\nPreferred date: " + date + "\nAdditional details: " + details;
+
+  window.open("https://wa.me/254143962045?text=" + encodeURIComponent(message), "_blank");
+});
+</script>
+</body>
+</html>
